@@ -217,9 +217,6 @@ vendor/lib/libOmxWmaDec.so
 vendor/lib/libSHIMDivxDrm.so
 -vendor/lib/libHevcSwDecoder.so
 
-# NFC firmware
-vendor/firmware/libpn547_fw.so
-
 # Perf
 bin/mpdecision
 vendor/lib/libqc-opt.so
