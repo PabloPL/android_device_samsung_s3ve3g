@@ -86,3 +86,13 @@ TW_CRYPTO_FS_FLAGS := "0x00000406"
 TW_CRYPTO_KEY_LOC := "footer"
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
+
+# Multirom
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := $(LOCAL_PATH)/mr_init_devices.c
+MR_RD_ADDR := 0x82500000
+MR_DPI := hdpi
+MR_DPI_FONT := 216
+MR_FSTAB := $(LOCAL_PATH)/recovery/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x85000000
+# MR_INFOS := d$(LOCAL_PATH)/mrom_infos
