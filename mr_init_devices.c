@@ -7,39 +7,32 @@
 // You can use * at the end to init this folder and all its subfolders
 const char *mr_init_devices[] =
 {
+    // framebuffer device
     "/sys/class/graphics/fb0",
 
+    // storage devices
     "/sys/block/mmcblk0",
-    "/sys/devices/platform/msm_sdcc.1",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p6",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p23",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p21",
-
+    "/sys/devices/msm_sdcc.1",
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0",
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001",
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0*",
     "/sys/bus/mmc",
     "/sys/bus/mmc/drivers/mmcblk",
-    "/sys/bus/sdio/drivers/bcmsdh_sdmmc",
     "/sys/module/mmc_core",
     "/sys/module/mmcblk",
 
+    // input
+    "/sys/devices/gpio_keys.82/input*",
     "/sys/devices/virtual/input*",
+    "/sys/devices/f9927000.i2c/i2c-5/5-0048/input*",
     "/sys/devices/virtual/misc/uinput",
-    "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-keypad/input*",
-    "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-pwrkey/input*",
 
-    // for adb
+    // adb
     "/sys/class/tty/ptmx",
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p21", //system
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p22", // /cache
     "/sys/class/misc/android_adb",
     "/sys/class/android_usb/android0/f_adb",
     "/sys/bus/usb",
-
-    // Mount persist and firmware
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0:0001/block/mmcblk0/mmcblk0p20", //persist
-    "/sys/devices/platform/msm_sdcc.1/mmc_host/mmc0:0001/block/mmcblk0/mmcblk0p1", //firmware
 
     // USB Drive is in here
     "/sys/devices/platform/msm_hsusb_host*",
