@@ -94,5 +94,6 @@ MR_RD_ADDR := 0x82500000
 MR_DPI := hdpi
 MR_DPI_FONT := 216
 MR_FSTAB := $(LOCAL_PATH)/recovery/twrp.fstab
-MR_KEXEC_MEM_MIN := 0x85000000
+# End of first RAM region is 0x083fffff, so we set it to for example 0x07500000
+MR_KEXEC_MEM_MIN := 0x07500000
 # MR_INFOS := d$(LOCAL_PATH)/mrom_infos
