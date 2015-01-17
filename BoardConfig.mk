@@ -90,7 +90,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/f
 # Multirom
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := $(LOCAL_PATH)/mr_init_devices.c
-MR_RD_ADDR := 0x82500000
 MR_DPI := hdpi
 MR_DPI_FONT := 216
 MR_FSTAB := $(LOCAL_PATH)/recovery/twrp.fstab
