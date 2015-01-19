@@ -88,6 +88,7 @@ TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
 
 # Multirom
+HAVE_SELINUX := true
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := $(LOCAL_PATH)/mr_init_devices.c
 MR_DPI := hdpi
