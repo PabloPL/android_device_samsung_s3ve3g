@@ -561,9 +561,9 @@ struct mdp_overlay {
  uint32_t blend_op;
  uint32_t transp_mask;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+ uint32_t pipe_type;
  uint32_t flags;
  uint32_t id;
- uint8_t priority;
  uint32_t user_data[6];
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  uint32_t bg_color;
